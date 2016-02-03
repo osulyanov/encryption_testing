@@ -1,0 +1,17 @@
+<h1>Usuario</h1>
+Password:<br/>
+<%= @user.encrypted_password %>
+<br/>
+Original de Devise:
+<br/>
+$2a$10$Ac/BdqTAw7odU/DHNvQ3/ehKcqLOMJqjIU75f5avv7LzV6BK3/Px2
+<br/>
+De Joomla:
+<br/>
+$2y$10$JkhssOzOB2/IRacx6vEqQeVYD/ErXZPYeLm0iskmipNr5qGGLCI.K
+<br/>
+$2y$10$wMqPoZk16f2952wec38NX.sJMSWKzq5Sb/7Sa5dBu99MWoT.Npgk2
+<br/>
+<%= @user.inspect %>
+<br/>
+<%= link_to('Login', new_user_session_path)  %>
