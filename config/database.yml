@@ -21,6 +21,6 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: pg
-  pool: 5
   database: encryption_testing-production
+  username: postgres
+  password: lfvgc
