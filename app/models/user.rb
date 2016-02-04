@@ -15,7 +15,10 @@ class User < ActiveRecord::Base
   end
 
   def password_verify(password, hash)
+    Rails.logger.info "password=#{password}"
+    Rails.logger.info "hash=#{hash}"
     ret = password.crypt(hash)
+    Rails.logger.info "ret=#{ret}"
     if ret.blank? || ret.length != hash.length || ret.length <= 13
       return false
     end
