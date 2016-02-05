@@ -27,6 +27,8 @@ gem 'devise'
 
 gem 'rails_admin'
 
+#gem 'devise-encryptable'
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -40,6 +42,9 @@ gem 'capistrano-rbenv', github: 'capistrano/rbenv'
 gem 'capistrano-friday'
 gem 'capistrano-rails-console'
 gem 'capistrano-unicorn-nginx', '~> 3.2.0'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
