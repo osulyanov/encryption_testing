@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+
   def valid_password?(password)
     return false if encrypted_password.blank?
     enc = encrypted_password
